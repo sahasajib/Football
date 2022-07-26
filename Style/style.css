@@ -1,0 +1,347 @@
+/* -----------------------------------------------------
+            goole fonts
+ ----------------------------------------------------- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* -----------------------------------------------------
+            common styles and utilities 
+ ----------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* -----------------------------------------------------
+            Banner Style 
+ ----------------------------------------------------- */
+
+.banner {
+    background-color: #2D25A0;
+    color: white;
+    height: 677px;
+    display: flex;
+    justify-content: space-around;
+}
+.banner-tittle {
+    width: 485px;
+    height: 230px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin-right: 102px;
+    transform : translate(156px,207px);
+}
+.banner-image {
+    margin-top: 153px;
+}
+.banner-image img{
+    width: 556.01px;
+    height: 438px;
+}
+.banner-image:hover img {
+    transform: skew(15deg);
+    transition: transform 2s ease-in-out;
+}
+.banner-tittle a:hover i{
+    transform: scaleX(1.5);
+}
+.banner-tittle a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+}
+
+/* -----------------------------------------------------
+           Player profile style 
+ ----------------------------------------------------- */
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    margin: 70px 210px 115px 180px;
+}
+.player {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.player-image img{
+    width: 100%;
+}
+.player-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.about-player {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* -----------------------------------------------------
+            Studium
+ ----------------------------------------------------- */
+.stadiums-container {
+    margin-bottom: 0;
+}
+ .stadiums-container h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+}
+ .stadiums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 100%;
+    margin: 70px 210px 165px 180px;
+}
+.stadium {
+    width: 300px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-top: 50px;
+}
+.stadium-image img{
+    width: 100%;
+}
+.stadium-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.about-stadium {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+/* -----------------------------------------------------
+           Euro Final Match
+ ----------------------------------------------------- */
+.euro-final {
+    margin-top: -100px;;
+}
+ .final-match-tittle {
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    margin-bottom: 50px;
+    margin-top: 0;
+ }
+
+ .team {
+     position: relative;
+     height: 450px;
+     width: 800px;
+     margin: 0 auto;
+     margin-bottom: 50px;
+     overflow: hidden;
+ }
+ .team img {
+     width: 100%;
+ }
+.team-details {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    display: none;
+    padding:0 5px;
+    height: 100%;
+}
+.team-details h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: black;
+}
+.team-details p {
+    margin-bottom:  35px;
+}
+.team-details a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    text-decoration: none;
+    color: white;
+}
+.team:hover .team-details{
+    color: black;
+    display: block;
+    height: 100%;
+    width: 100%;
+    
+}
+.team:hover .team-info{
+    background-color: rgb(223, 215, 215,.755);
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+.team:hover img {
+    transform: scale(1.1);
+    transition: transform 5s;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+}
+/* -----------------------------------------------------
+           Footer Style
+ ----------------------------------------------------- */
+ .footer-info {
+     margin: 158px 41px 63px 415px;
+     width: 483px;
+     height: 110px;
+ }
+ .footer-image img {
+     text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+ }
+ .footer-links {
+    text-align: center;
+ }
+ .footer-links i{
+     text-align: center;
+     margin-left: 22px;
+     background-color: #969BAB;
+     padding: 5px;
+     border-radius: 50%;
+     opacity: .4;
+ }
+ .footer-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+     margin: 20px auto;
+ }
+ /* -----------------------------------------------------
+                    Media Query For Mobile
+ ----------------------------------------------------- */
+ 
+
+
+@media screen and (max-width: 688px){
+
+    /* Banner  */
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+    .banner-tittle {
+        transform: translate(15px,20px);
+        font-size: 30px;
+        width: 80%;
+    }
+    .banner-tittle p {
+        width: 80%;
+        margin-bottom: -25px;
+        font-size: 25px;
+    }
+    
+    .banner-image img{
+        margin-top: -100px;
+        height: 80%;
+        width: 90%;
+    }
+
+    /* Players  */
+
+    .players { 
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+    }
+
+    .player {
+        width: 100%;
+    }
+
+    /* Stadiums 
+     */
+    .stadiums {
+        height: 100%;
+        margin: 70px 10px 165px 10px;
+    }
+
+    .stadium{
+        width: 100%;
+    }
+
+    /* Euro Final Match  */
+
+    .final-match-tittle {
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 80px;
+        margin-bottom: 50px;
+        margin-top: 0;
+     }
+     .final-match-tittle {
+        text-align: center;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        margin-bottom: 50px;
+        margin-top: 0;
+     }   
+     .team {
+         width: 100%;
+         margin-bottom: 50px;
+         overflow: hidden;
+     }
+     .team img {
+         width: 90%;
+     }
+    .team:hover .team-info{
+       display: none;
+    }
+    .team:hover img {
+        transform: scaleX(1);
+    }
+
+    /* Footer  */
+    footer .footer-info {
+        margin: 0 auto;
+    }
+
+    .footer-info {
+        margin: 0px 0px 63px 10px;
+        width: 90%;
+        height: 300px;
+    }
+}
+ 
